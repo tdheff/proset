@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": false,
   "dependencies": {
-    "socket": "*",
+    "socket.io": "*",
     "express": "*",
     "mongodb": "*",
     "mongoose": "*"
