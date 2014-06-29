@@ -10,5 +10,8 @@
     "mongoose": "*",
     "precommit-hook": "^1.0.2",
     "socket.io": "*"
+  },
+  "scripts": {
+    "lint": "coffeelint app.coffee"
   }
 }
