@@ -11,6 +11,7 @@
     "precommit-hook": "^1.0.2",
     "socket.io": "*"
   },
+  "precommit": ["lint"],
   "scripts": {
     "lint": "coffeelint app.coffee"
   }
