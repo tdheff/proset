@@ -6,8 +6,15 @@ app = express()
 server = http.Server app
 io = socket server
 
+Game = require './models/game'
+
+my_game = new Game 1
+
 app.get '/', (req,res) ->
-  res.send 'hello!'
+  if my_game.return_true()
+    res.send 'hello!'
+  else
+    res.send 'goodbye!'
 
 io.on 'connection', () ->
   console.log 'connected'
