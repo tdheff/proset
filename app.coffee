@@ -6,7 +6,7 @@ app = express()
 server = http.Server app
 io = socket server
 
-Game = require './models/game'
+Game = require './controllers/game'
 
 my_game = new Game 1
 
